@@ -1,4 +1,3 @@
 get '/' do
-	redirect '/channels'
-  erb :index
+	redirect '/users'
 end
