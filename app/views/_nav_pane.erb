@@ -1,0 +1,12 @@
+<% unless logged_in? %>
+  <a href="/">Home</a>
+  <a href="/sessions/new">login</a>
+  <a href="/users/new">register</a>
+<% end %>
+
+<% if logged_in? %>
+  <%= current_user.first_name %>
+  <a href="/">Home</a>
+    <a id="delete-button" href="/logout">logout</a>
+
+<% end %>
